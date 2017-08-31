@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='css/style.css'>
+  <title>Nerds-Shop</title>
+</head>
+<body>
+  <header class='main-header'>
+    <nav class='main-navigation'>
+      <img src="http://placehold.it/200x100" width='200' height='100' alt='логотип веб-студии'>
+        <ul class='site-navigation'>
+          <li><a href='#click1'> Студия </li>
+          <li><a href='#click2'> Клиенты </li>
+          <li><a href='shop.html'> Магазин </li>
+          <li><a href='#click3'> Контакты </li>
+        </ul>
+        <ul class='busket'>
+          <li class='busket-link'><a href='#'> Корзина </a> </li>
+        </ul>
+     </nav>
+   </header>
+
+<main>
+  <div class="header2">  <h1 class="main-header-title">Магазин готовых шаблонов</h1> </div>
+  <section class="filter">
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<div class="filter-price">
+					<label for="price">Стоимость:</label>
+					<div class="price">
+						<input type="range" name="price" min="0" max="25000" value="15000" id="price">
+					</div>
+					<label>От <input type="number" name="min-price" min="0" max="25000" value="0"></label>
+					<label>До <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
+				</div>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul class="filter-grid">
+						<li class="filter-option">
+							<inputtype="radio" name="grid-group" value="adaptive" id="adaptive" checked>
+							<label for="adaptive">Адаптивная</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" name="grid-group" value="fixed" id="fixed">
+							<label for="fixed">Фиксированная</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" name="grid-group" value="rubber" id="rubber">
+							<label for="rubber">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul class="properties">
+						<li class="filter-option">
+							<input type="checkbox" name="slider" id="slider" checked>
+							<label for="slider">Слайдер</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="advantages" id="advantages">
+							<label for="advantages">Блок преимуществ</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="news" id="news" checked>
+							<label for="news">Новости</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="galery" id="galery">
+							<label for="galery">Галерея</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="basket" id="basket">
+							<label for="basket">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="button filter-button">Показать</button>
+			</form>
+		</section>
+    <section class="sort">
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Сортировать:</legend>
+          <ul class="sort-list">
+            <li class="sort-option">
+              <label class="current">По цене<input type="radio" name="sort-item"></label>
+            </li>
+            <li class="sort-option">
+              <label>По типу<input type="radio" name="sort-item"></label>
+            </li>
+            <li class="sort-option">
+              <label>По названию<input type="radio" name="sort-item"></label>
+            </li>
+          </ul>
+          <img class="current" src="#" alt="По убыванию" width="11" height="11">
+          <img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="11">
+      </fieldset>
+    </form>
+  </section>
+
+  <section class="catalog">
+    <ul class="catalog-list">
+      <li class="catalog-item current">
+        <a href="#"><img src="#" width="360" height="576" alt="Sedona - информационный сайт для туристов"></a>
+        <div class="catalog-item-info">
+          <h3 class="catalog-item-info-title">Sedona</h3>
+          <p>Информационный сайт для туристов</p>
+          <button class="button catalog-button">9 900 руб.</button>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <a href="#"><img src="#" width="360" height="576" alt="Pink App - продуктовый лендинг приложения для IOS и Android"></a>
+        <div class="catalog-item-info">
+          <h3 class="catalog-item-info-title">Pink App</h3>
+          <p>Продуктовый лендинг приложения для IOS и Android</p>
+          <button class="button catalog-button">9 900 руб.</button>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <a href="#"><img src="#" width="360" height="576" alt="Барбершоп &#171;Бородинский&#187; - сайт салона красоты для мужчин"></a>
+        <div class="catalog-item-info">
+          <h3 class="catalog-item-info-title">Barbershop</h3>
+          <p>Сайт салона красоты.</p>
+          <button class="button catalog-button">9 900 руб.</button>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <a href="#"><img src="#" width="360" height="576" alt="Mishka - интернет-магазин вязаных игрушек"></a>
+        <div class="catalog-item-info">
+          <h3 class="catalog-item-info-title">Mishka</h3>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <button class="button catalog-button">9 900 руб.</button>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <a href="#"><img src="#" width="360" height="576" alt="A Plus - лендинг курсов повышения квалификации"></a>
+        <div class="catalog-item-info">
+          <h3 class="catalog-item-info-title">A Plus</h3>
+          <p>Лендинг курсов повышения квалификации</p>
+          <button class="button catalog-button">9 900 руб.</button>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <a href="#"><img src="#" width="360" height="576" alt="Кваст - промо-сайт производителя крафтового кваса"></a>
+        <div class="catalog-item-info">
+          <h3 class="catalog-item-info-title">Кваст</h3>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <button class="button catalog-button">9 900 руб.</button>
+        </div>
+      </li>
+    </ul>
+    <ul class="pagination-list">
+        <li class="pagination-item current"><a title="Первая страница">1</a></li>
+        <li class="pagination-item"><a href="#" title="Вторая страница">2</a></li>
+        <li class="pagination-item"><a href="#" title="Третья страница">3</a></li>
+        <li class="pagination-item"><a href="#" title="Следующая страница">Следующая</a></li>
+      </ul>
+  </section>
+</main>
+
+    <footer class="main-footer">
+ +			<div class="footer-contacts">
+ +				<p><b>Nёrds design studio</b></p>
+ +				<p>191186, Санкт-Петербург,ул. Б.Конюшенная, д. 19/8</p>
+ +				<p>Телефон: +7 (812) 275-75-75</p>
+ +				<button class="footer-button">Напишите нам</button>
+ +			</div>
+ +			<div class="footer-map">
+ +				<img src="http://placehold.it/150x190" width="150" height="190" alt="Маркер">
+ +				<img src="http://placehold.it/1430x415" width="1430" height="415" alt="Карта">
+ +			</div>
+ +			<div class="footer-social">
+ +				<p><b>Давайте дружить, это выгодно!</b></p>
+ +				<p>Скидка 10% для друзей из социальных сетей.</p>
+ +				<ul class="footer-social-list">
+ +					<li><a class="social-button" href="#">Вконтакте</a></li>
+ +					<li><a class="social-button" href="#">Фейсбук</a></li>
+ +					<li><a class="social-button" href="#">Инстаграм</a></li>
+ +				</ul>
+ +			</div>
+ +		</footer>
+
+</body>
+</html>
