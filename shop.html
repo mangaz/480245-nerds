@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Nerds-Shop</title>
 </head>
 <body>
   <header class="main-header">
     <nav class="container main-navigation">
-      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип веб-студии"></a>
+      <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип веб-студии"></a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -26,17 +27,18 @@
   <section class="filter">
 			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset class="filter-price">
-					<label for="price">Стоимость:</label>
+          <p class="true">Стоимость:</p>
+					<!--<label for="price">Стоимость:</label>-->
 					<div class="price">
             <div class="circle"> </div>
             <div class="circle"> </div>
             <div class=""> </div>
 					</div>
-  					<label>От <input type="number" name="min-price" min="0" max="25000" value="0"></label>
-  					<label>До <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
+  					<label class="from-to">От <input type="number" name="min-price" min="0" max="25000" value="0"></label>
+  					<label class="from-to">До <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
 				</fieldset>
 				<fieldset>
-					<legend>Сетка:</legend>
+					<legend class="true">Сетка:</legend>
 					<ul class="filter-grid">
 						<li class="filter-option">
 							<input class="visually-hidden" type="radio" name="grid-group" value="adaptive" id="adaptive" checked>
@@ -53,7 +55,7 @@
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>Особенности:</legend>
+					<legend class="true">Особенности:</legend>
 					<ul class="properties">
           <div class="price">
           </div>
@@ -107,7 +109,7 @@
         <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona - информационный сайт для туристов">
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Sedona</a>
-          <p>Информационный сайт для туристов</p>
+          <p class="site-title">Информационный сайт для туристов</p>
           <button class="button catalog-button">9 900 руб.</button>
         </div>
       </li>
@@ -116,7 +118,7 @@
         <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App - продуктовый лендинг приложения для IOS и Android">
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Pink App</a>
-          <p>Продуктовый лендинг приложения для IOS и Android</p>
+          <p class="site-title">Продуктовый лендинг приложения для IOS и Android</p>
           <button class="button catalog-button">9 900 руб.</button>
         </div>
       </li>
@@ -125,7 +127,7 @@
         <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп &#171;Бородинский&#187; - сайт салона красоты для мужчин">
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Barbershop</a>
-          <p>Сайт салона красоты.</p>
+          <p class="site-title">Сайт салона красоты.</p>
           <button class="button catalog-button">9 900 руб.</button>
         </div>
       </li>
@@ -134,7 +136,7 @@
         <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka - интернет-магазин вязаных игрушек">
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Mishka</a>
-          <p>Интернет-магазин вязаных игрушек</p>
+          <p class="site-title">Интернет-магазин вязаных игрушек</p>
           <button class="button catalog-button">9 900 руб.</button>
         </div>
       </li>
@@ -143,7 +145,7 @@
         <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus - лендинг курсов повышения квалификации">
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">A Plus</a>
-          <p>Лендинг курсов повышения квалификации</p>
+          <p class="site-title">Лендинг курсов повышения квалификации</p>
           <button class="button catalog-button">9 900 руб.</button>
         </div>
       </li>
@@ -152,7 +154,7 @@
         <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст - промо-сайт производителя крафтового кваса">
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Кваст</a>
-          <p>Промо-сайт производителя крафтового кваса</p>
+          <p class="site-title">Промо-сайт производителя крафтового кваса</p>
           <button class="button catalog-button">9 900 руб.</button>
         </div>
       </li>

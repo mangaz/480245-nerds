@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
 body{
-	font-size: 16px;
 	font-family: "Roboto", Arial, sans-serif;
-	line-height: 24px;
-	color: #283136;
-}
+}	
 .slider-title {
 	font-size: 55px;
 	line-height: 55px;
@@ -17,4 +16,229 @@ body{
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+}
+.site-navigation a, .busket a{
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+}
+.site-navigation a:hover, .busket a:hover, /*при наведении*/
+.site-navigation a:focus, .busket a:focus{
+	color:#fb565a;
+}
+.site-navigation a:active, .busket a:active { /*при нажатии*/
+	color:#000;
+	opacity:0.3; /*прозрачность*/
+	/*color:rgba(0,0,0,0.3)*/
+}
+.slider-text p, .service p, .about p, .about li{
+	font-size:16px;
+	line-height: 24px;
+	color: #283136;
+}
+.button{
+	background-color: #fb565a;
+	font-size:16px;
+	line-height:18px;
+	color:#ffffff;
+	text-transform: uppercase;
+}
+.button:hover, .button:focus {
+	background-color: #e74246;
+}
+.button:active {
+	background-color: #d7373b;
+	color:rgba(255,255,255,0.3);
+}
+.about b, .form h2{
+	font-size: 45px;
+	line-height: 45px;
+	color:#000;
+	font-weight: 500;
+}
+.about h3, .about-2 p{
+	font-size:16px;
+	line-height:24px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.about-2 th{
+	font-size: 45px;
+	
+	color:#000;
+	font-weight: 700;
+}
+.about-2 td{
+	font-size: 16px;
+	line-height: 18px;
+	color:#283136;
+}
+.footer-contacts p{
+	font-size: 16px;
+	line-height: 18px;
+	color:#666666;
+}
+.footer-contacts b{
+	font-size: 18px;
+	line-height: 30px;
+	color:#000;
+	text-transform: uppercase;
+}
+.footer-text b{
+	font-size: 36px;
+	line-height: 36px;
+	color:#000;
+}
+.footer-text p{
+	font-size: 16px;
+	line-height: 22px;
+	color:#444444;
+}
+.form label {
+	font-size: 16px;
+	line-height: 18px;
+	color:#000;
+	font-weight: 700;
+}
+.form input {
+	font-size: 16px;
+	line-height: 18px;
+	color:#444;
+	font-weight: 400;
+}
+.form input::placeholder {
+	font-size: 16px;
+	line-height: 18px;
+	color:#000;
+	font-weight: 400;
+}
+.form input:hover, .form input:focus{
+	border-color: #b4b9bb;
+}
+.form input:active{
+	border-color: #000;
+	color:#000;
+}
+.form .invalide{
+	border-color: #e74246;
+	color:#e74246;
+}
+.main-header, .slider {
+	background-color: #eeeeee;
+}
+.service-2 .button {
+	background-color:#00ca74;
+}
+.service-2 .button:hover, .service-2 .button:focus {
+	background-color:#00bc6c;
+}
+.service-2 .button:active {
+	background-color:#00aa62;
+}
+
+.service-3 .button {
+	background-color:#efc849;
+}
+.service-3 .button:hover, .service-3 .button:focus {
+	background-color:#eab534;
+}
+.service-3 .button:active {
+	background-color:#e5a722;
+}
+.social-button {
+	background-color:#e1e1e1;
+}
+.social-button:hover, .social-button:focus {
+	background-color:#e74246;
+}
+.social-button:active {
+	background-color:#d7373b;
+}
+.social-button:active img {
+	opacity:0.3;	
+}
+.footer-contacts, .form {
+	background-color:#fff;
+}
+.partners-list a{
+	opacity:0.2;
+}
+.partners-list a:hover, .partners-list a:focus{
+	opacity:1;
+}
+.partners-list a:active{
+	opacity:0.1;
+}
+.logo:hover, .logo:focus {
+	opacity: 0.8;
+}
+.logo:active {
+	opacity: 0.3;
+}
+
+/*Стили SHOP*/
+.main-header-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000;
+}
+.true {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+}
+.filter-option {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+.filter-button {
+	background-color: #eeeeee;
+	color:#000;
+}
+.filter-button:hover, .filter-button:focus {
+	background-color:#dfdfdf;
+}
+.filter-button:active {
+	background-color:#d5d5d5;
+}
+.sort-option {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	text-transform: uppercase;
+}
+.from-to {
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+	text-transform: uppercase;
+}
+.pagination-item {
+	background-color: #eeeeee;
+	font-size:16px;
+	line-height:18px;
+	color:#000;
+	text-transform: uppercase;
+}
+.catalog-item-info-title {
+	font-size:18px;
+	line-height:30px;
+	color:#000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.catalog-item-info {
+	background-color: #eeeeee;
+}
+.site-title {
+	font-size:16px;
+	line-height:18px;
+	color:#666;
 }
