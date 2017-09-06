@@ -7,28 +7,27 @@
   <title>Nerds-Shop</title>
 </head>
 <body>
-  <header class="main-header">
+   <header class="main-header">
     <nav class="container main-navigation">
-      <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип веб-студии"></a>
-        <ul class="site-navigation">
+      <a class="logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="логотип веб-студии"></a>
+        <ul class="site-navigation"> 
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="shop.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="busket">
-          <li class="busket-link"><a href="#">Корзина</a></li>
+          <li><a href="#">Корзина</a></li>
         </ul>
      </nav>
    </header>
 
-  <div class="header2">  <h1 class="main-header-title">Магазин готовых шаблонов</h1> </div>
-<main class="container">
+  <div class="header2"><div class="container"><h1 class="main-header-title">Магазин готовых шаблонов</h1></div></div>
+<main class="container catalog-wrapper">
   <section class="filter">
 			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset class="filter-price">
-          <p class="true">Стоимость:</p>
-					<!--<label for="price">Стоимость:</label>-->
+          <legend class="true">Стоимость:</legend>
 					<div class="price">
             <div class="circle"> </div>
             <div class="circle"> </div>
@@ -57,8 +56,6 @@
 				<fieldset>
 					<legend class="true">Особенности:</legend>
 					<ul class="properties">
-          <div class="price">
-          </div>
 						<li class="filter-option">
 							<input class="visually-hidden" type="checkbox" name="slider" id="slider" checked>
 							<label for="slider">Слайдер</label>
@@ -84,7 +81,7 @@
 				<button class="button filter-button">Показать</button>
 			</form>
 		</section>
-    <div>
+    <div class="right-column">
     <section class="sort">
         <p>Сортировать:</p>
           <ul class="sort-list">
@@ -170,15 +167,16 @@
 </main>
 
     <section class="map">
+        <h2 class="visually-hidden">Карты</h2>
+        <img src="img/map-marker.jpg" width="1430" height="415" alt="Карта">
         <div class="container">
       <div class="footer-contacts">
         <p><b>Nёrds design studio</b></p>
         <p>191186, Санкт-Петербург,ул. Б.Конюшенная, д. 19/8</p>
         <p>Телефон: +7 (812) 275-75-75</p>
-        <a href="write-us.html" class="footer-button">Напишите нам</a>
+        <a href="write-us.html" class="button footer-button">Напишите нам</a>
       </div>
       </div>
-        <img src="img/map-marker.jpg" width="1430" height="415" alt="Карта">
       
       </section>
 

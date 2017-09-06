@@ -3,6 +3,21 @@ html {box-sizing: border-box;}
 *, *::before, *::after {box-sizing: inherit;}
 body{
 	font-family: "Roboto", Arial, sans-serif;
+}
+.visually-hidden {
+	position: absolute;
+	margin: -1px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+}
+.container {
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px; /*для того, чтоб не было впритык контента к окну*/
+	padding-right: 20px;
 }	
 .slider-title {
 	font-size: 55px;
@@ -23,6 +38,7 @@ body{
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 .site-navigation a:hover, .busket a:hover, /*при наведении*/
 .site-navigation a:focus, .busket a:focus{
@@ -241,4 +257,148 @@ body{
 	font-size:16px;
 	line-height:18px;
 	color:#666;
+}
+.main-navigation, .site-navigation {
+	display: flex;
+    align-items: center;
+    justify-content: space-between; /* прижимает первый и последний элементы к краям*/
+}
+.site-navigation, .busket, .partners-list, .footer-social-list, .catalog-list, .pagination-list, .sort-list,
+.properties, .filter-grid {
+	margin: 0;
+	padding: 0;
+	list-style: none; /*убирает точки у списка*/
+}
+.site-navigation li {
+	margin: 0 23px;
+}
+.shop, .partners-list {
+	display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+	display: flex;
+}
+.partners-list {
+	align-items: center;
+}
+.main-footer .container {
+	display: flex;
+}
+.map {
+	height: 416px;
+	position: relative;
+}
+.map img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+}
+.map .container {
+	position: relative;
+	z-index: 1;
+}
+.footer-contacts {
+	position: absolute;
+	left: 0;
+	top:54px;
+	padding: 47px 50px;
+	width: 320px;
+}
+.footer-contacts p:nth-child(1) {
+	margin-top: 0;
+}
+.slide, .slider-radio {
+	display: none;
+}
+#i1:checked ~ .slider .slide-1, #i2:checked ~ .slider .slide-2, #i3:checked ~ .slider .slide-3 {
+	display: block;
+}
+.slider-pagination label {
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border-radius: 100%;
+	display: block;
+	margin: 0 8px;
+}
+.slider-pagination {
+	display: flex;
+	justify-content: center;
+}
+.footer-social-list {
+	width: 400px;
+	display: flex;
+}
+.catalog-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.filter {
+	width: 260px;
+}
+.right-column {
+	width: 760px;
+}
+.catalog-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.catalog-list li {
+	width: 360px;
+}
+.sort, .sort-list {
+	display: flex;
+}
+.sort {
+	justify-content: space-between;
+}
+.catalog-item {
+	position: relative;
+}
+.catalog-item-info {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+	width: 100%
+}
+.catalog-item:hover .catalog-item-info {
+	display: block;
+}
+.pagination-list {
+	display: flex;
+}
+.filter-grid label {
+	padding-left: 36px;
+	position: relative;
+}
+.filter-grid label::before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 25px;
+	height: 25px;
+	left: 0;
+	top: 0;
+	border: 4px solid #a6a6a6;
+	border-radius: 100%
+}
+.filter-grid input:checked + label::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 9px;
+	height: 9px;
+	left: 8px;
+	top: 8px;
+	background: #a6a6a6;
+	border-radius: 100%
+}
+.filter-grid label{
+	margin: 12px 0;
+	display: block;
 }
