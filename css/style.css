@@ -629,3 +629,9 @@ body{
 .slide p {
 	max-width: 360px;
 }
+.site-navigation {
+	margin-right: 83px; margin-top: 15px;
+}
+.busket {
+    margin-top: 10px;
+}
