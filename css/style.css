@@ -1217,6 +1217,9 @@ input.visually-hidden:focus + label {
 	border-color: #000;
 	outline: none;
 }
+.map iframe {
+	width: 100%;
+}
 .error {
 	-webkit-animation: error 0.25s;
 	        animation: error 0.25s;
