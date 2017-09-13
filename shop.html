@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Nerds-Shop</title>
 </head>
 <body>
@@ -33,10 +33,10 @@
             <div class="circle circle-right"></div>
             <div class="line"></div>
 					</div>
-  					<label class="from-to">От <input type="number" name="min-price" min="0" max="25000" value="0"></label>
-  					<label class="from-to">До <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
+  					<label class="from-to"><span>От</span><input type="number" name="min-price" min="0" max="25000" value="0"></label>
+  					<label class="from-to"><span>До</span><input type="number" name="max-price" min="0" max="25000" value="15000"></label>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-price2">
 					<legend class="true">Сетка:</legend>
 					<ul class="filter-grid">
 						<li class="filter-option">
@@ -53,7 +53,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-price3">
 					<legend class="true">Особенности:</legend>
 					<ul class="properties">
 						<li class="filter-option">
@@ -107,7 +107,7 @@
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Sedona</a>
           <p class="site-title">Информационный сайт для туристов</p>
-          <button class="button catalog-button">9 900 руб.</button>
+          <a href="#" class="button catalog-button">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -116,7 +116,7 @@
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Pink App</a>
           <p class="site-title">Продуктовый лендинг приложения для IOS и Android</p>
-          <button class="button catalog-button">9 900 руб.</button>
+          <a href="#" class="button catalog-button">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -125,7 +125,7 @@
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Barbershop</a>
           <p class="site-title">Сайт салона красоты.</p>
-          <button class="button catalog-button">9 900 руб.</button>
+          <a href="#" class="button catalog-button">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -134,7 +134,7 @@
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Mishka</a>
           <p class="site-title">Интернет-магазин вязаных игрушек</p>
-          <button class="button catalog-button">9 900 руб.</button>
+          <a href="#" class="button catalog-button">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -143,7 +143,7 @@
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">A Plus</a>
           <p class="site-title">Лендинг курсов повышения квалификации</p>
-          <button class="button catalog-button">9 900 руб.</button>
+          <a href="#" class="button catalog-button">9 900 руб.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -152,7 +152,7 @@
         <div class="catalog-item-info">
           <a href="#" class="catalog-item-info-title">Кваст</a>
           <p class="site-title">Промо-сайт производителя крафтового кваса</p>
-          <button class="button catalog-button">9 900 руб.</button>
+          <a href="#" class="button catalog-button">9 900 руб.</a>
         </div>
       </li>
     </ul>
@@ -160,25 +160,25 @@
         <li class="pagination-item current"><a title="Первая страница">1</a></li>
         <li class="pagination-item"><a href="#" title="Вторая страница">2</a></li>
         <li class="pagination-item"><a href="#" title="Третья страница">3</a></li>
-        <li class="pagination-item"><a href="#" title="Следующая страница">Следующая</a></li>
-      </ul>
+        <li class="pagination-item pagination-item--next"><a href="#" title="Следующая страница">Следующая</a></li>
+    </ul>
   </section>
   </div>
 </main>
 
     <section class="map">
-        <h2 class="visually-hidden">Карты</h2>
-        <img src="img/map-marker.jpg" width="1430" height="415" alt="Карта">
+          <h2 class="visually-hidden">Карты</h2>
+          <img src="img/map-marker.jpg" width="1430" height="415" alt="Карта">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651525!2d30.32089461639195!3d59.93879418187636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504716688501" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container">
-      <div class="footer-contacts">
-        <p><b>Nёrds design studio</b></p>
-        <p>191186, Санкт-Петербург,ул. Б.Конюшенная, д. 19/8</p>
-        <p>Телефон: +7 (812) 275-75-75</p>
-        <a href="write-us.html" class="button footer-button">Напишите нам</a>
-      </div>
-      </div>
-      
-      </section>
+          <div class="footer-contacts">
+            <p><b>Nёrds design studio</b></p>
+            <p>191186, Санкт-Петербург,ул. Б.Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="write-us.html" class="button footer-button">Напишите нам</a>
+          </div>
+        </div>
+    </section>
 
       <footer class="main-footer">
       <div class="container">
@@ -193,6 +193,25 @@
         </div>
       </div>
     </footer>
-
+    <section class="form">
+      <h2>Напишите нам</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          Ваше имя:
+          <input class="login-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input class="login-email" type="email" name="email" placeholder="Для отправки ответа">
+        </label>
+        <label class="full-weight">
+          Текст письма:
+          <textarea name="mail" placeholder="В свободной форме"></textarea>
+        </label>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+      <button type="button" class="button-modal-close"><span class="visually-hidden">закрыть</span></button>
+    </section>
+  <script src="js/script.js"></script> 
 </body>
 </html>
