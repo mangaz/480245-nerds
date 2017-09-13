@@ -13,7 +13,7 @@
         <ul class="site-navigation"> 
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
+          <li class="active-menu"><a href="shop.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="busket">
@@ -29,9 +29,9 @@
 				<fieldset class="filter-price">
           <legend class="true">Стоимость:</legend>
 					<div class="price">
-            <div class="circle"> </div>
-            <div class="circle"> </div>
-            <div class=""> </div>
+            <div class="circle circle-left"></div>
+            <div class="circle circle-right"></div>
+            <div class="line"></div>
 					</div>
   					<label class="from-to">От <input type="number" name="min-price" min="0" max="25000" value="0"></label>
   					<label class="from-to">До <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
@@ -48,7 +48,7 @@
 							<label for="fixed">Фиксированная</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden" type="radio" name="grid-group" value="rubber" id="rubber">
+							<input class="visually-hidden" type="radio" name="grid-group" value="rubber" id="rubber" disabled>
 							<label for="rubber">Резиновая</label>
 						</li>
 					</ul>
@@ -94,8 +94,8 @@
             <li class="sort-option">
               <a href="#">По названию</a>
             </li>
-           <li><button><span class="visually-hidden">по убыванию</span><img class="current" src="img/icon-down-dir.svg" alt="По убыванию" width="11" height="11"></button></li>
-           <li><button><span class="visually-hidden">по возрастанию</span><img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="11"></button></li>
+           <li><button class="sort-button"><span class="visually-hidden">по убыванию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></button></li>
+           <li><button class="sort-button"><span class="visually-hidden">по возрастанию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></button></li>
           </ul>
     </section>
 

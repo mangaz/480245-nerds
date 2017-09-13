@@ -20,6 +20,7 @@ body{
 	padding-right: 20px;
 }	
 .slider-title {
+	margin-bottom: 26px;
 	margin-top: 0;
 	font-size: 55px;
 	line-height: 55px;
@@ -218,6 +219,39 @@ body{
 	font-weight: 700;
 	color: #000;
 	text-transform: uppercase;
+	margin-bottom: 9px;
+}
+.filter fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.filter-option label {
+	display: block;
+	padding-left: 36px;
+	position: relative;
+	margin-bottom: 25px;
+	padding-top: 2px;
+}
+.properties label::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	content: "";
+	width: 26px;
+	height: 23px;
+	background-image: url("../img/checkbox-off.svg");
+	background-position: left center;
+	background-repeat: no-repeat;
+} 
+.properties input:checked + label::before{
+	display: block;
+	content: "";
+	width: 26px;
+	height: 23px;
+	background-image: url("../img/checkbox-on.svg");
+	background-position: left center;
 }
 .filter-option {
 	font-size: 16px;
@@ -225,8 +259,16 @@ body{
 	color: #283136;
 }
 .filter-button {
+	text-align: center;
+	border-radius: 2px;
+	border: none;
+	font-size: 16px;
+	font-weight: 500;
+	width: 100%;
+	padding: 16px 10px;
 	background-color: #eeeeee;
 	color:#000;
+	font-family: "Roboto", Arial, sans-serif;
 }
 .filter-button:hover, .filter-button:focus {
 	background-color:#dfdfdf;
@@ -235,10 +277,12 @@ body{
 	background-color:#d5d5d5;
 }
 .sort-option {
+	margin-right: 30px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #000;
 	text-transform: uppercase;
+
 }
 .from-to {
 	font-size: 16px;
@@ -247,11 +291,30 @@ body{
 	text-transform: uppercase;
 }
 .pagination-item {
-	background-color: #eeeeee;
 	font-size:16px;
 	line-height:18px;
 	color:#000;
 	text-transform: uppercase;
+	margin-right: 11px;
+}
+.pagination-item a {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	color: #000;
+	display: block;
+	border-radius: 3px;
+	background-color: #dbdbdb;
+	padding: 16px 20px 16px 23px;
+}
+.pagination-item a:hover, .pagination-item a:focus {
+	background-color: #dfdfdf;
+}
+.pagination-item a:active {
+	color: #959595;
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 .catalog-item-info-title {
 	font-size:18px;
@@ -259,11 +322,16 @@ body{
 	color:#000;
 	text-transform: uppercase;
 	font-weight: 700;
+	text-decoration: none;
 }
 .catalog-item-info {
 	background-color: #eeeeee;
+	max-height: 231px;
+	overflow-y: auto;
 }
 .site-title {
+	max-width: 240px;
+	margin: 18px auto;
 	font-size:16px;
 	line-height:18px;
 	color:#666;
@@ -370,12 +438,16 @@ body{
 }
 .catalog-list li {
 	width: 360px;
+	margin-bottom: 33px;
+	align-items: center;
 }
 .sort, .sort-list {
 	display: flex;
+	align-items: center;
 }
 .sort {
 	justify-content: space-between;
+	margin-bottom: 55px;
 }
 .catalog-item {
 	position: relative;
@@ -385,12 +457,15 @@ body{
 	left: 0;
 	bottom: 0;
 	display: none;
-	width: 100%
+	width: 100%;
+	padding: 35px 35px 43px;
+	text-align: center;
 }
 .catalog-item:hover .catalog-item-info {
 	display: block;
 }
 .pagination-list {
+	margin-bottom: 60px;
 	display: flex;
 }
 .filter-grid label {
@@ -407,6 +482,9 @@ body{
 	top: 0;
 	border: 4px solid #a6a6a6;
 	border-radius: 100%
+}
+.filter-grid input:disabled + label::before {
+	display: none;
 }
 .filter-grid input:checked + label::after {
 	position: absolute;
@@ -427,6 +505,7 @@ body{
 	padding: 49px 0;
 }
 .slide .button {
+	padding-top: 3px;
 	text-decoration: none;
 	display: table;
 	padding: 16px 53px;
@@ -618,7 +697,7 @@ body{
 	width: 515px;
 }
 .slide {
-	padding: 80px 0;
+	padding: 66px 0;
 	position: relative;
 }
 .slide img {
@@ -629,9 +708,165 @@ body{
 .slide p {
 	max-width: 360px;
 }
+.catalog-button{
+	border: none;
+	border-radius: 2px;
+	width: 200px;
+	margin: 0 auto;
+	padding: 16px 5px;
+}
 .site-navigation {
 	margin-right: 83px; margin-top: 15px;
 }
 .busket {
     margin-top: 10px;
+}
+.sort a {
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	opacity: 0.3;
+}
+.sort a:hover, .sort a:focus {
+	opacity: 0.6;
+}
+.sort a:active {
+	opacity: 1;
+}
+.sort-button {
+	margin-left: 17px;
+	background: none;
+	border: 0;
+}
+.sort-button svg {
+	fill: #ededed;
+}
+.sort-button:hover svg, .sort-button:focus svg {
+	fill: #a6a6a6;
+}
+.sort-button:active svg {
+	fill: #000;
+}
+.sort p {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700px;
+	margin: 0;
+}
+.catalog-item-header {
+	padding: 14px 41px 13px;
+	position: relative;
+	background-color: #e9e9e9;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.catalog-item-header span {
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	border-radius: 100px;
+	position: relative;
+}
+.catalog-item-header span:before, .catalog-item-header span:after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	border-radius: 100px;
+	position: absolute;
+	top: 0;
+}
+.catalog-item-header span:before {
+	left: -23px;
+}
+.catalog-item-header span:after {
+	right: -23px;
+}
+.catalog-item:hover .catalog-item-header {
+	background-color: #4d4d4d;
+}
+.catalog-item:hover {
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+}
+.pagination-item.current a {
+	background-color: #fff;
+	box-shadow: inset 0 0 0 3px #dbdbdb;
+}
+.catalog-item img {
+	border: 1px solid #e9e9e9;
+}
+.catalog-item:hover img {
+	border-top-color: #4d4d4d;
+}
+.header2 {
+	margin: 0;
+	text-align: center;
+	padding: 67px 0;
+	background-color: #eee;
+	margin-bottom: 57px;
+}
+.active-menu {
+	position: relative;
+}
+.active-menu:after {
+	width: 100%;
+	height: 2px;
+	background-color: #fb565a;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	display: block;
+	content: "";
+}
+.price {
+	position: relative;
+	background-color: #eee;
+	padding: 39px 21px 39px 18px;
+	margin-bottom: 14px;
+}
+.line {
+	position: relative;
+	width: 219px;
+	height: 2px;
+	background-color: #00ca74;
+}
+.line::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 70px;
+	height: 2px;
+	right: 0;
+	top: 0;
+	background-color: #d7dcde;
+}
+.circle {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 1px 2px 1px #cfcfcf;
+	border-radius: 100%;
+	top: 30px;
+	z-index: 1;
+}
+.circle::before {
+	width: 4px;
+	height: 4px;
+	border-radius: 100%;
+	position: absolute;
+	display: block;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	content: "";
+	background-color: #ababab;
+}
+.circle-left {
+	left: 18px;
+}
+.circle-right {
+	left: 160px;
 }
