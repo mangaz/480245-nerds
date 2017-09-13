@@ -321,7 +321,8 @@ body {
 	height: 23px;
 	background-image: url("../img/checkbox-off.svg");
 	background-position: left center;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
+	opacity: 0.4;
 }
 
 .properties input:checked + label::before {
@@ -330,9 +331,12 @@ body {
 	width: 26px;
 	height: 23px;
 	background-image: url("../img/checkbox-on.svg");
-	background-position: left center
+	background-position: left center;
+	opacity: 0.4;
 }
-
+.properties label:hover::before, .properties input:checked + label:hover::before {
+	opacity: 1;
+}
 .filter-option {
 	margin-bottom: 19px;
 	font-size: 16px;
@@ -677,7 +681,12 @@ body {
 	background: #a6a6a6;
 	border-radius: 100%
 }
-
+.filter-grid label:hover::before {
+	border-color: #4d4d4d;
+}
+.filter-grid input:checked + label:hover::after {
+	background-color: #4d4d4d;
+}
 .filter-grid label {
 	margin: 12px 0;
 	display: block
@@ -1179,7 +1188,7 @@ fieldset.filter-price2 {
 }
 
 input.visually-hidden:focus + label {
-	opacity: 0.5
+	outline: 1px solid #68b2d5;
 }
 
 .shop .service {
@@ -1200,6 +1209,13 @@ input.visually-hidden:focus + label {
 
 .pagination-item--next a {
 	padding: 16px 75px
+}
+.form input:hover, .form textarea:hover {
+	border-color: #b4b9bb;
+}
+.form input:focus, .form textarea:focus {
+	border-color: #000;
+	outline: none;
 }
 .error {
 	-webkit-animation: error 0.25s;
