@@ -356,6 +356,10 @@ body {
 	font-family: "Roboto", Arial, sans-serif
 }
 
+.button {
+	font-family: "Roboto", Arial, sans-serif
+}
+
 .filter-button:hover, .filter-button:focus {
 	background-color: #dfdfdf
 }
